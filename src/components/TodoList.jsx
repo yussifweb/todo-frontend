@@ -31,28 +31,6 @@ const TodoList = () => {
         message.info('Todo Updated');
     }
 
-    // const refresh = () => {
-    //     loadTodos()
-    //       .then(json => {
-    //         setTodos(json);
-    //         setActiveTodos(json.filter(todo => todo.completed === false));
-    //         setCompletedTodos(json.filter(todo => todo.completed === true));
-    //     }).then(console.log('fetch completed'));
-    // }
-
-    // const onRefresh = useCallback( async () => {
-    //         setRefreshing(true);
-    //         let data = await loadTodos();
-    //         setTodos(data);
-    //         setActiveTodos(data.filter(todo => todo.completed === false));
-    //         setCompletedTodos(data.filter(todo => todo.completed === true));
-    //         setRefreshing(false);
-    //         console.log('refresh State', refreshing);
-    //     }, [refreshing]);
-
-    //     useEffect(() => {
-    //         refresh();
-    //     }, [onRefresh]);    
 
     const refresh = () => {
         loadTodos()
